@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5xa-Ou-1B2">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log InVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LogInVC" customModule="PracticalTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To GoogleSignIn! To continue with GoogleSignIn please hit below button." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRG-03-Wey">
+                                <rect key="frame" x="20" y="309" width="353" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1I-pq-5av">
+                                <rect key="frame" x="20" y="399.66666666666669" width="353" height="52.666666666666686"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="   Sign in With Google" image="logo_Google"/>
+                                <connections>
+                                    <action selector="btnGoogleSignInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Gg-ID-oQX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j1I-pq-5av" firstAttribute="top" secondItem="zRG-03-Wey" secondAttribute="bottom" constant="50" id="8VX-Yn-4k6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zRG-03-Wey" secondAttribute="trailing" constant="20" id="DVv-k9-ZEJ"/>
+                            <constraint firstItem="j1I-pq-5av" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="50/375" id="GFk-2k-Mwo"/>
+                            <constraint firstItem="zRG-03-Wey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gqc-As-kjO"/>
+                            <constraint firstItem="j1I-pq-5av" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sgH-WZ-s0h"/>
+                            <constraint firstItem="j1I-pq-5av" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tFO-k4-ULZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j1I-pq-5av" secondAttribute="trailing" constant="20" id="xrw-sq-ToU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WpJ-Qs-b1Z"/>
+                    <connections>
+                        <outlet property="btnGoogleSignIn" destination="j1I-pq-5av" id="Qpq-Xz-OSK"/>
+                        <outlet property="lblDes" destination="zRG-03-Wey" id="Yvt-OB-7zi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="81"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="BYs-gb-ucc">
+            <objects>
+                <viewController storyboardIdentifier="ImagesVC" id="CcH-5T-cBR" customClass="ProfileVC" customModule="PracticalTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bN8-PY-ZK4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnC-WR-yYl">
+                                <rect key="frame" x="20" y="745.66666666666663" width="353" height="52.333333333333371"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="   Sign Out With Google" image="logo_Google"/>
+                                <connections>
+                                    <action selector="btnSignedOutTapped:" destination="CcH-5T-cBR" eventType="touchUpInside" id="cKX-SO-hxC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGO-r6-2nH">
+                                <rect key="frame" x="20" y="153" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXN-eq-5Xd">
+                                <rect key="frame" x="20" y="194" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hrd-WP-ZXW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hrd-WP-ZXW" firstAttribute="trailing" secondItem="tXN-eq-5Xd" secondAttribute="trailing" constant="20" id="3La-Jk-lSt"/>
+                            <constraint firstItem="EGO-r6-2nH" firstAttribute="top" secondItem="hrd-WP-ZXW" secondAttribute="top" constant="50" id="3dr-Su-HDC"/>
+                            <constraint firstItem="tnC-WR-yYl" firstAttribute="leading" secondItem="hrd-WP-ZXW" secondAttribute="leading" constant="20" id="5L3-Ti-gx5"/>
+                            <constraint firstAttribute="trailing" secondItem="tnC-WR-yYl" secondAttribute="trailing" constant="20" id="IrZ-Ei-ZAb"/>
+                            <constraint firstItem="tnC-WR-yYl" firstAttribute="height" secondItem="bN8-PY-ZK4" secondAttribute="width" multiplier="50/375" id="LcL-7e-jd6"/>
+                            <constraint firstItem="hrd-WP-ZXW" firstAttribute="bottom" secondItem="tnC-WR-yYl" secondAttribute="bottom" constant="20" id="S80-tX-MMB"/>
+                            <constraint firstItem="hrd-WP-ZXW" firstAttribute="trailing" secondItem="EGO-r6-2nH" secondAttribute="trailing" constant="20" id="a2h-an-lMv"/>
+                            <constraint firstItem="tXN-eq-5Xd" firstAttribute="leading" secondItem="hrd-WP-ZXW" secondAttribute="leading" constant="20" id="fnM-9T-jJY"/>
+                            <constraint firstItem="tXN-eq-5Xd" firstAttribute="top" secondItem="EGO-r6-2nH" secondAttribute="bottom" constant="20" id="qaG-eB-qQg"/>
+                            <constraint firstItem="EGO-r6-2nH" firstAttribute="leading" secondItem="hrd-WP-ZXW" secondAttribute="leading" constant="20" id="yc1-hG-Ja8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NBX-Iz-GVm"/>
+                    <connections>
+                        <outlet property="btnGoogleSignOut" destination="tnC-WR-yYl" id="f2m-bw-erj"/>
+                        <outlet property="lblEmail" destination="tXN-eq-5Xd" id="QTX-JX-7Rp"/>
+                        <outlet property="lblName" destination="EGO-r6-2nH" id="8hT-Ee-724"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUK-ot-QYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3346" y="74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GIh-eB-eP7">
+            <objects>
+                <navigationController storyboardIdentifier="NavLogin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5xa-Ou-1B2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KMQ-dA-Wcj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yFR-gD-va2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABa-6L-bqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="81"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vlQ-Sg-Xlw">
+            <objects>
+                <navigationController storyboardIdentifier="NavHome" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HPB-Vq-me3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O0R-m0-ZLz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CcH-5T-cBR" kind="relationship" relationship="rootViewController" id="CDj-by-tpZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55I-dm-0ra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678.6259541984732" y="80.985915492957744"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_Google" width="44" height="44"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
